@@ -1,0 +1,82 @@
+#include <iostream>
+using namespace std;
+//int main() {
+    // problem1
+    //     int intNumber = 25;
+    //     float floatNumber = 3.14f;
+    //     double doubleNumber = 45.1234;
+    //     bool boolean = true;
+    //     char charName = 'A';
+    //
+    //     cout << "intNumber: " << intNumber << ", Size: " << sizeof(intNumber) << endl;
+    //     cout << "floatNumber: " << floatNumber << ", Size: " << sizeof(floatNumber) << endl;
+    //     cout << "doubleNumber: " << doubleNumber << ", Size: " << sizeof(doubleNumber) << endl;
+    //     cout << "boolean: " << boolean << ", Size: " << sizeof(boolean) << endl;
+    //     cout << "charName: " << charName << ", Size: " << sizeof(charName) << endl;
+    //
+    //     return 0;
+//}
+    //problem2
+// int main() {
+//     string name = "Najimov Azizbek";
+//     int id =250240;
+//     string favoriteSong = "Diamonds";
+//     string favoriteMovie = "Avengers";
+//
+//     cout << name << endl;
+//     cout << id << endl;
+//     cout << favoriteSong << endl;
+//     cout << favoriteMovie << endl;
+//
+//     return 0;
+// }
+
+// //problem3
+// #include <iostream>
+// using namespace std;
+//
+// int main() {
+//     cout << "\"I’m standing\" on the edge of some crazy cliff. What I have to do, I have to catch everybody\\ if they start to go over the cliff—I mean\\ \\if they’re running and they don’t look where they’re going I have to come out from somewhere and catch them." << endl;
+//     return 0;
+// }
+
+//problem4
+// int main() {
+//     int a=13;
+//     char b='R';
+//     float c=float(a)/3;
+//     float d=int(b);
+//     float f=float(a+b)/5;
+//     char g=b+(a/10-1);
+//     cout << c << " " <<d << " " <<f << " " <<g << endl;
+//     return 0;
+// }
+
+// //problem5
+// int main() {
+//     int a=12;
+//     int b=38;
+//     int sum=a+b;
+//     int product=a*b;
+//     cout <<sum<< " " <<product<< endl;
+//     return 0;
+// }
+
+// //problem6
+// int main() {
+//     int num1;
+//     int num2;
+//     cin >>num1 >>num2;
+//     cout <<num1 << "+" <<num2 << "=" <<num1 + num2<< endl;
+//     return 0;
+// }
+
+//problem7
+int main() {
+    int x;
+    int y;
+    cin >> x >> y;
+    int res=(3*(x*x+3))/((y/4)+3);
+    cout << res << endl;
+    return 0;
+}
