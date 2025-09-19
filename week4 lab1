@@ -1,0 +1,275 @@
+#include <cmath>
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+//problem12
+// int main() {
+//     int first, second, third;
+//     cout << "Enter the sides: " << endl;
+//     cin >> first >> second >> third;
+//     if (first+second+third==180)
+//         cout <<"Valid";
+//     else
+//         cout <<"Invalid";
+//     return 0;
+// }
+
+//problem13
+
+// int main() {
+//     double a, b, c, discriminant, root1, root2;
+//     cout << "Enter values for a, b, c: ";
+//     cin >> a >> b >> c;
+//     discriminant = b * b - 4 * a * c;
+//
+//     if (discriminant > 0) {
+//         root1 = (-b + sqrt(discriminant)) / (2 * a);
+//         root2 = (-b - sqrt(discriminant)) / (2 * a);
+//         cout << "X1 = " << root1 << endl;
+//         cout << "X2 = " << root2 << endl;
+//     }
+//     else if (discriminant == 0) {
+//         root1 = -b / (2 * a);
+//         cout << "Root = " << root1 << endl;
+//     }
+//     else {
+//         cout << "No valid roots" << endl;
+//     }
+//
+//     return 0;
+// }
+//
+
+//problem14
+// int main() {
+//     char a;
+//     cin >>a;
+//     if (a>='A'&& a<='Z')
+//         cout << "Uppercase" << endl;
+//     else if (a>='a'&& a<='z')
+//         cout << "Lowercase" << endl;
+//     else
+//         cout << "not an alphabet" << endl;
+//     return 0;
+// }
+
+//problem15
+// int main() {
+//     double w1, p1, w2, p2;
+//     cout << "Enter weight of first package: ";
+//     cin >> w1;
+//     cout << "Enter price of first package: ";
+//     cin >> p1;
+//     cout << "Enter weight of second package: ";
+//     cin >> w2;
+//     cout << "Enter price of second package: ";
+//     cin >> p2;
+//     double cost1 = p1/w1;
+//     double cost2 = p2/w2;
+//     if (cost1>cost2)
+//         cout <<"Package 2 has a better price";
+//     else
+//         cout <<"Package 1 has a better price";
+//     return 0;
+// }
+
+//problem 16
+// int main() {
+//     int number;
+//     cout << "Enter a 3 digit number: ";
+//     cin >> number;
+//     if ((number/100)==(number%10))
+//         cout << "Palindrome";
+//     else
+//         cout << "Not a palindrome";
+//     return 0;
+// }
+
+//problem17
+// int main() {
+//     char let;
+//     cin >> let;
+//     if (let=='u')
+//         cout <<"Salom";
+//     else if (let=='e')
+//         cout <<"Hi";
+//     else if (let=='r')
+//         cout <<"Privet";
+//     else if (let=='g')
+//         cout <<"Hallo";
+//     else
+//         cout <<"Idk this language";
+//     return 0;
+// }
+//
+// //question(nonumber)
+// int main() {
+//     float gpa;
+//     int category;
+//
+//     cout << "Enter your GPA: ";
+//     cin >> gpa;
+//     switch (category) {
+//         case 1:
+//             cout << "You got 80% scholarship" << endl;
+//             break;
+//         case 2:
+//             cout << "You got 60% scholarship" << endl;
+//             break;
+//         case 3:
+//             cout << "You got 50% scholarship" << endl;
+//             break;
+//         case 4:
+//             cout << "No scholarship" << endl;
+//             break;
+//         default:
+//             cout << "Invalid GPA entered!" << endl;
+//     }
+//     return 0;
+// }
+
+//question18
+// int main() {
+//     double x, y;
+//     cout << "Enter x and y: ";
+//     cin >> x >> y;
+//
+//     double distanceSquared = x * x + y * y;
+//
+//     if (distanceSquared <= 100)
+//         cout << "Point (" << x << ", " << y << ") is inside the circle" << endl;
+//     else
+//         cout << "Point (" << x << ", " << y << ") is outside the circle" << endl;
+//
+//     return 0;
+// }
+
+//question19
+// int main() {
+//     int today, futureDays;
+//     cout << "Enter today's day: ";
+//     cin >> today;
+//     cout << "Enter the number of days after today: ";
+//     cin >> futureDays;
+//
+//     int futureDay = (today + futureDays) % 7;
+//
+//     cout << "Today is ";
+//     switch (today) {
+//         case 0: cout << "Sunday"; break;
+//         case 1: cout << "Monday"; break;
+//         case 2: cout << "Tuesday"; break;
+//         case 3: cout << "Wednesday"; break;
+//         case 4: cout << "Thursday"; break;
+//         case 5: cout << "Friday"; break;
+//         case 6: cout << "Saturday"; break;
+//     }
+//
+//     cout << " and the future day is ";
+//
+//     switch (futureDay) {
+//         case 0: cout << "Sunday"; break;
+//         case 1: cout << "Monday"; break;
+//         case 2: cout << "Tuesday"; break;
+//         case 3: cout << "Wednesday"; break;
+//         case 4: cout << "Thursday"; break;
+//         case 5: cout << "Friday"; break;
+//         case 6: cout << "Saturday"; break;
+//     }
+//     return 0;
+// }
+
+//question20
+
+// int main() {
+//     double w;
+//     int category;
+//     cout << "Enter the weight of the package: ";
+//     cin >> w;
+//     if (w <= 0) category = 0;
+//     else if (w <= 1) category = 1;
+//     else if (w <= 3) category = 2;
+//     else if (w <= 10) category = 3;
+//     else if (w <= 20) category = 4;
+//     else category = 5;
+//
+//     switch (category) {
+//         case 0:
+//             cout << "Invalid input" << endl;
+//             break;
+//         case 1:
+//             cout << "Shipping cost: 3500 som" << endl;
+//             break;
+//         case 2:
+//             cout << "Shipping cost: 5500 som" << endl;
+//             break;
+//         case 3:
+//             cout << "Shipping cost: 8500 som" << endl;
+//             break;
+//         case 4:
+//             cout << "Shipping cost: 10500 som" << endl;
+//             break;
+//         case 5:
+//             cout << "The package cannot be shipped" << endl;
+//             break;
+//     }
+//
+//     return 0;
+// }
+
+//question21
+int main() {
+    int month;
+    cout << "Enter month number (1-12): ";
+    cin >> month;
+
+    switch (month) {
+        case 1:
+            cout << "In January there is:\n"
+                 << "New Year, 1 January\n";
+            break;
+        case 2:
+            cout << "In February there are no holidays. Ramadan Hayit and Kurban Hayit dates change every year.\n";
+            break;
+        case 3:
+            cout << "In March there is:\n"
+                 << "International Women's Day, 8 March\n"
+                 << "Navruz, 21 March\n";
+            break;
+        case 4:
+            cout << "In April there are no holidays. Ramadan Hayit and Kurban Hayit dates change every year.\n";
+            break;
+        case 5:
+            cout << "In May there is:\n"
+                 << "Memorial Day, 9 May\n";
+            break;
+        case 6:
+            cout << "In June there are no holidays. Ramadan Hayit and Kurban Hayit dates change every year.\n";
+            break;
+        case 7:
+            cout << "In July there are no holidays. Ramadan Hayit and Kurban Hayit dates change every year.\n";
+            break;
+        case 8:
+            cout << "In August there are no holidays.Ramadan Hayit and Kurban Hayit dates change every year.\n";
+            break;
+        case 9:
+            cout << "In September there is:\n"
+                 << "Independence Day, 1 September\n";
+            break;
+        case 10:
+            cout << "In October there is:\n"
+                 << "Teachers Day, 1 October\n";
+            break;
+        case 11:
+            cout << "In November there are no holidays.Ramadan Hayit and Kurban Hayit dates change every year.\n";
+            break;
+        case 12:
+            cout << "In December there is:\n"
+                 << "Constitution Day, 8 December\n";
+            break;
+        default:
+            cout << "Invalid month number.\n";
+    }
+    return 0;
+}
