@@ -1,0 +1,135 @@
+#include <iostream>
+using namespace std;
+
+//question1
+// int power(int x, int y) {
+//     if (y == 0)
+//         return 1;
+//     return x * power(x, y - 1);
+// }
+//
+// int main() {
+//     int x, y;
+//     cin >> x >> y;
+//     cout << power(x, y);
+// }
+
+//question2
+// int reverseNum(int n, int rev = 0) {
+//     if (n == 0)
+//         return rev;
+//     return reverseNum(n / 10, rev * 10 + n % 10);
+// }
+//
+// int main() {
+//     int n;
+//     cin >> n;
+//     cout << reverseNum(n);
+// }
+
+//question3
+// int reverseNum(int n, int rev = 0) {
+//     if (n == 0)
+//         return rev;
+//     return reverseNum(n / 10, rev * 10 + n % 10);
+// }
+//
+// bool isPalindrome(int n) {
+//     return n == reverseNum(n);
+// }
+//
+// int main() {
+//     int n;
+//     cin >> n;
+//     cout << (isPalindrome(n));
+// }
+
+//question4
+// bool isPrime(int n, int i = 2) {
+//     if (n <= 2)
+//         return n == 2;
+//     if (n % i == 0)
+//         return false;
+//     if (i * i > n)
+//         return true;
+//     return isPrime(n, i + 1);
+// }
+//
+// int main() {
+//     int n;
+//     cin >> n;
+//     cout << (isPrime(n));
+// }
+
+//prob5
+// int counteven(int n) {
+//     if (n == 0)
+//         return 0;
+//     return ((n % 10) % 2 == 0) + counteven(n / 10);
+// }
+//
+// int main() {
+//     int n;
+//     cin >> n;
+//     cout << counteven(n);
+// }
+
+//prob6
+// int product(int n) {
+//     if (n == 0)
+//         return 1;
+//     return (n % 10) * product(n / 10);
+// }
+//
+// int main() {
+//     int n;
+//     cin >> n;
+//     cout << product(n);
+// }
+
+//prob7
+
+//prob8
+// bool increasing(int n) {
+//     if (n < 10)
+//         return true;
+//     if (n % 10 <= (n / 10) % 10)
+//         return false;
+//     return increasing(n / 10);
+// }
+//
+// int main() {
+//     int n;
+//     cin >> n;
+//     cout << (increasing(n));
+// }
+
+// prob9
+ // int countZero(int n) {
+ //     if (n == 0)
+ //         return 0;
+ //     return (n % 10 == 0) + countZero(n / 10);
+ // }
+ //
+ // int main() {
+ //     int n;
+ //     cin >> n;
+ //     cout << countZero(n);
+ // }
+
+// prob10
+//  int fastPower(int x, int y) {
+//      if (y == 0)
+//          return 1;
+//      int half = fastPower(x, y / 2);
+//      if (y % 2 == 0)
+//          return half * half;
+//      else
+//          return x * half * half;
+//  }
+//
+//  int main() {
+//      int x, y;
+//      cin >> x >> y;
+//      cout << fastPower(x, y);
+//  }
