@@ -1,0 +1,129 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+//quest9
+// int main() {
+//     int a = 7, b = 14, c = 21;
+//     int *ptrs[3] = {&a, &b, &c};
+//     cout << *ptrs[0] << " " << *ptrs[1]<< " " << *ptrs[2] << endl;
+//     return 0;
+// }
+
+//quest10
+// int main() {
+//     int arr[5] = {9,3,7,1,6};
+//     int *p = arr;
+//     for(int i=0;i<5;i++){
+//         for(int j=0;j<4-i;j++){
+//             int* a = p + j;
+//             int* b = p + j + 1;
+//             if(*a > *b){
+//                 int t = *a;
+//                 *a = *b;
+//                 *b = t;
+//             }
+//         }
+//     }
+//     for(int i=0;i<5;i++)
+//         cout << *(p+i);
+// }
+
+//quest11
+// int main() {
+//     const char * suit[4] = {"Hearts", "Diamonds", "Clubs", "Spades"};
+//     for (int i = 0; i < 4; i++) {
+//         cout << suit[i] << " "  ;
+//     }
+// }
+
+//quest12
+// int main() {
+//     const char* days[3] = {"Mon","Tue","Wed"};
+//     for(int i=0;i<3;i++)
+//         cout << *(days[i]+1);
+// }
+
+//quest13
+// int main() {
+//     int deck[4][13] = {};
+//     deck[0][0] = 1;
+//     deck[3][1] = 1;
+//     const char* suits[4] = {"Hearts","Diamonds","Clubs","Spades"};
+//     const char* faces[13] = {"Ace","Two","Three","Four","Five","Six","Seven",
+//                              "Eight","Nine","Ten","Jack","Queen","King"};
+//     for(int i=0;i<4;i++){
+//         for(int j=0;j<13;j++){
+//             if(deck[i][j] == 1) {
+//                 cout << faces[j] << " of " << suits[i] << " ";
+//             }
+//         }
+//     }
+// }
+
+//quest15
+// void greet() {
+//     cout << "Hello from greet()" << endl;
+// }
+// void bye() {
+//     cout << "Goodbye from bye()" << endl;
+// }
+// int main() {
+//     void (*fptr)();
+//     fptr = greet;
+//     fptr();
+//     fptr = bye;
+//     fptr();
+//     return 0;
+// }
+
+//quest16
+// int add(int a, int b) {
+//     return a + b;
+// }
+// int multiply(int a, int b) {
+//     return a * b;
+// }
+// int main() {
+//     int x = 5, y = 3;
+//     int (*fptr)(int, int);
+//
+//     fptr = add;
+//     cout << "Add: " << fptr(x, y) << endl;
+//
+//     fptr = multiply;
+//     cout << "Multiply: " << fptr(x, y) << endl;
+//
+//     return 0;
+// }
+
+//quest17
+// int add(int a, int b) {
+//     return a + b;
+// }
+// int multiply(int a, int b) {
+//     return a * b;
+// }
+// void calculate(int (*op)(int, int), int x, int y) {
+//     cout << "result: " << op(x, y) << endl;
+// }
+// int main() {
+//     calculate(add, 10, 10);
+//     calculate(multiply, 4, 5);
+// }
+
+//quest18
+// int add(int a, int b) {
+//     return a + b;
+// }
+// int multiply(int a, int b) {
+//     return a * b;
+// }
+// int main() {
+//     int (*ops[])(int, int) = { add, multiply };
+//     int choice = 2;
+//     int x = 3, y = 5;
+//     cout << "output: " << ops[choice - 1](x, y) << endl;
+//
+//     return 0;
+// }
